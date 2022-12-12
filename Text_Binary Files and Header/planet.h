@@ -87,7 +87,7 @@ void saveText(planet_t a_planet){
 void readBin(planet_t *a_planet){
 	FILE *plan_bin_inp;
 	plan_bin_inp =fopen("planet_out.bin", "rb");
-	fread(&a_planet,sizeof (planet_t),1, plan_bin_inp);
+	fread(&(*a_planet),sizeof (planet_t),1, plan_bin_inp);
 	fclose(plan_bin_inp);
 }
 

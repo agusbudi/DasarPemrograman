@@ -29,6 +29,7 @@ int main(){
 //	print_planet(current_planet);	
 	
 //	readText(&current_planet);	
-	readBin(&current_planet);
-	print_planet(current_planet);
+	planet_t new_planet;
+	readBin(&new_planet);
+	print_planet(new_planet);
 }
